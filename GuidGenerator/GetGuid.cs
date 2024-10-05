@@ -14,7 +14,7 @@ namespace GuidGenerator
             _logger = logger;
         }
 
-        [Function("Function1")]
+        [Function("GetGuid")]
         public async Task<IActionResult>  Run([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequest req)
         {
             _logger.LogInformation("Started the GetGuid Function Call");
